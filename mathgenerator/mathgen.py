@@ -78,6 +78,13 @@ def squareRootFunction(minNo = 1, maxNo = 12):
     solution = str(b)
     return problem, solution
 
+def squareFunction(minNo = 1, maxNo = 12):
+    b = random.randint(minNo, maxNo)
+    a = b*b
+    problem = "square(" + str(b) + ")="
+    solution = str(a)
+    return problem, solution
+
 # || Class Instances
 
 #Format is:
@@ -89,3 +96,4 @@ division = Generator("Division", 5, "a/b=", "c", divisionFunc)
 binaryComplement1s = Generator("binary_complement_1s", 6, "1010=", "0101", binaryComplement1sFunc)
 moduloDivision = Generator("Modulo_Division", 7, "a%b=", "c", moduloFunc)
 squareRoot = Generator("Square _Root", 8, "sqrt(a)=", "b", squareRootFunction)
+square = Generator("Square", 9, "square(a)=", "b", squareFunction)
